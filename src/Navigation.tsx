@@ -9,7 +9,7 @@ function Navigation()
                 <img className="navbar_logo" src="../public/logo.png"/>
                 <div className="navbar_pages">
                     <Link className="navbar_page" to="/">Home</Link>
-                    <Link className="navbar_page" to="/products">Products</Link>
+                    <Link className="navbar_page" to="/products">Volunteer</Link>
                     <Link className="navbar_page" to="/about">About</Link>
                 </div>
 

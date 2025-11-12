@@ -10,3 +10,38 @@
     font-size: 32px;
     border-bottom: 1px solid lightgray;
 }
+
+.scheduler_inputs
+{
+    display: flex;
+    flex-direction: column;
+
+    > * {
+        padding-bottom: 24px;
+    }
+}
+
+.scheduler_input
+{
+
+}
+
+.scheduler_options
+{
+    > button
+    {
+        padding: 7px 12px;
+    }
+}
+
+.scheduler_options_submit
+{
+    background-color: dodgerblue;
+    color: white;
+    margin-right: 10px;
+}
+
+.scheduler_options_cancel
+{
+    background-color: lightgray;
+}

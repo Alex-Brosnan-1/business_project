@@ -27,8 +27,8 @@ function Products()
                 </div>
             </div>
             <div className="scheduler_options">
-                <button>Submit Volunteer Form</button>
-                <button>Cancel</button>
+                <button className="scheduler_options_submit">Submit Form</button>
+                <button className="scheduler_options_cancel">Cancel</button>
             </div>
         </div>
 
