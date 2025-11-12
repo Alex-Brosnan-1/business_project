@@ -1,19 +1,9 @@
 import './App.css'
 import './Hero.css'
 import './Proposal.css'
-import {useState} from "react";
 
 function App()
 {
-    const [hovered, setHovered] = useState(false);
-    const [xPercent, setXPercent] = useState(0);
-
-    const handleMouseMove = (e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const percent = (x / rect.width) * 100;
-        setXPercent(percent);
-    };
 
   return (
     <>
