@@ -1,0 +1,12 @@
+.scheduler
+{
+    background: white;
+    width: 100vw;
+}
+
+.scheduler_title
+{
+    width: 100%;
+    font-size: 32px;
+    border-bottom: 1px solid lightgray;
+}
