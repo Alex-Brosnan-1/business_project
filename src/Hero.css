@@ -1,6 +1,6 @@
 .hero
 {
-    background-image: url(../public/hero_img.jpg);
+    background-image: url(images/hero_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -30,15 +30,6 @@
     {
         margin-bottom: 30px;
     }
-}
-
-.hero_button
-{
-    background-color: var(--color-blue-dark);
-    color: white;
-
-    border-radius: 30px;
-    padding: 9px 30px;
 }
 
 .hero_description
