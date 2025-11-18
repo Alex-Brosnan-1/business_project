@@ -7,11 +7,11 @@ function Navigation()
     return (
         <>
             <div className="navbar">
-                <img className="navbar_logo" src={logos_img}/>
+                <img className="navbar_logo" src={logos_img} alt=""/>
                 <div className="navbar_pages">
                     <Link className="navbar_page" to="/">Home</Link>
                     <Link className="navbar_page" to="/products">Volunteer</Link>
-                    <Link className="navbar_page" to="/about">About</Link>
+                    <Link className="navbar_page" to="">About</Link>
                 </div>
 
                 <button className="navbar_cart">View Cart</button>

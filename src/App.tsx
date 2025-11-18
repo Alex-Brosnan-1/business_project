@@ -62,7 +62,7 @@ function TeamMember({ name, role, email, desc, image }:{ name: string, role: str
 {
     return (
         <div className="team_member">
-            <img className="team_member_img" src={image}/>
+            <img className="team_member_img" src={image} alt=""/>
 
             <div>
                 <h3 className="team_member_role" >{role}</h3>
