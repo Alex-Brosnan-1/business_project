@@ -59,7 +59,7 @@ function Appointment({ name, email, month, day }:{ name: string, email: string, 
                 <h4 className="appointment_name">{name}</h4>
                 <h4 className="appointment_email">{email}</h4>
             </div>
-            <h3 className="appointment_date">Nov 13</h3>
+            <h3 className="appointment_date">{month} / {day}</h3>
         </div>
     )
 }
