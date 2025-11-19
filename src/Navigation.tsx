@@ -9,12 +9,14 @@ function Navigation()
             <div className="navbar">
                 <img className="navbar_logo" src={logos_img} alt=""/>
                 <div className="navbar_pages">
-                    <Link className="navbar_page" to="/">Home</Link>
-                    <Link className="navbar_page" to="/products">Volunteer</Link>
-                    <Link className="navbar_page" to="">About</Link>
+                    <Link to="/" style={{height: "100%", display: "flex", alignItems: "center", justifyContent: "center"}}><div className="navbar_page">Home</div></Link>
+                    <Link to="/products" style={{height: "100%", display: "flex", alignItems: "center", justifyContent: "center"}}><div className="navbar_page">Volunteer</div></Link>
+                    <Link to="" style={{height: "100%", display: "flex", alignItems: "center", justifyContent: "center"}}><div className="navbar_page">About</div></Link>
                 </div>
 
-                <button className="navbar_cart">View Cart</button>
+                <Link to="/products" style={{color: "white"}}>
+                    <button className="navbar_cart">View Schedule</button>
+                </Link>
             </div>
             <Outlet/>
         </>

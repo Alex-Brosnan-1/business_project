@@ -38,11 +38,6 @@
     }
 }
 
-.scheduler_options
-{
-
-}
-
 
 .scheduler_options_submit
 {
@@ -111,6 +106,43 @@
     margin-bottom: 15px;
 
     padding: 5px 15px;
+
+    position: relative;
+}
+
+.appointment:hover .appointment_cancel
+{
+    visibility: visible;
+}
+
+.appointment_cancel
+{
+    content: "X";
+
+    background-color: rgba(0, 0, 0, 0.2);
+    color: red;
+
+    position: absolute;
+    top: -5px;
+    left: -5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2px 8px;
+    font-size: 12px;
+
+    border-radius: 100%;
+
+    cursor: pointer;
+
+    visibility: hidden;
+}
+
+.appointment_cancel:hover
+{
+    scale: 110%;
 }
 
 .appointment_contact
