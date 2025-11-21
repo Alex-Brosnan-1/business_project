@@ -6,6 +6,7 @@ import daniel_img from '../src/images/daniel_millers.jpg'
 import jackson_img from '../src/images/jackson_johnson.jpg'
 import michelle_img from '../src/images/michelle_smith.jpg'
 import rachel_img from '../src/images/rachel_brown.jpg'
+import {Link} from "react-router";
 
 function App()
 {
@@ -21,7 +22,9 @@ function App()
                     we aim to ensure that no one in our community goes
                     without a meal or basic necessity”
                 </p>
-                <button className="hero_button">Learn More</button>
+                <Link to="/products" style={{color: "white"}}>
+                    <button className="hero_button">Volunteer Now</button>
+                </Link>
             </div>
         </div>
         <div className="team">
@@ -54,6 +57,13 @@ function App()
               image={jackson_img}
           />
       </div>
+        <div className="about">
+            <h1 className="about_header"> Our Mission </h1>
+            <p className="about_text">
+                At Together We Nourish, our mission is to provide food and essential necessities to those in need within our community. Based in Freehold, NJ, we believe that a little goes a long way. We strive to make everyday life easier for others while inspiring compassion and expanding our reach to communities beyond our own
+            </p>
+
+        </div>
     </>
   )
 }

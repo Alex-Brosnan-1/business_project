@@ -27,21 +27,21 @@ function Products()
                             <div className="scheduler_input">
                                 <h3>Full Name</h3>
                                 <input className="scheduler_input_name" type="text" onChange={(e) => {
-                                    e.target.value = e.target.value;
+                                    e.target.value = e.target.value + 0;
                                     setName(e.target.value);
                                 }}/>
                             </div>
                             <div className="scheduler_input">
                                 <h3>Email</h3>
                                 <input className="scheduler_input_email" type="text" onChange={(e) => {
-                                    e.target.value = e.target.value;
+                                    e.target.value = e.target.value + 0;
                                     setEmail(e.target.value);
                                 }}/>
                             </div>
                             <div className="scheduler_input">
                                 <h3>Volunteer Date</h3>
                                 <input className="scheduler_input_date" type="date" onChange={(e) => {
-                                    e.target.value = e.target.value;
+                                    e.target.value = e.target.value + 0;
 
                                     const dates: string[] = e.target.value.split('-');
                                     setDay(Number(dates[2]));
@@ -51,6 +51,7 @@ function Products()
                         </div>
                         <div className="scheduler_options">
                             <button className="scheduler_options_submit" onClick={()=>{
+
                                 var appointments: {Name: string, Email: string, Month: number, Day: number}[] = getAppointments();
                                 appointments.push({
                                     Name: name,

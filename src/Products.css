@@ -1,3 +1,8 @@
+body
+{
+    background: linear-gradient(-45deg, var(--color-blue-light) 0%, var(--color-blue-dark) 100%) no-repeat;
+}
+
 .container
 {
     width: 100vw;
@@ -6,11 +11,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .scheduler
 {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+
+    backdrop-filter: blur(50px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+
     width: 1000px;
     height: 600px;
 
@@ -31,17 +43,21 @@
     display: flex;
     flex-direction: column;
 
-    padding-top: 20px;
+    height: 100%;
 
-    > * {
-        padding-bottom: 24px;
+    > *
+    {
+        padding-bottom: 50px;
     }
+
+    padding: 40px 0;
+
 }
 
 
 .scheduler_options_submit
 {
-    background-color: dodgerblue;
+    background-color: var(--color-red);
     color: white;
     margin-right: 10px;
 }
@@ -69,6 +85,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .right {
@@ -85,7 +102,7 @@
 .appointments
 {
     width: 100%;
-    height: 90%;
+    height: 82%;
 
     overflow-y: scroll;
 
@@ -97,7 +114,7 @@
 
 .appointment
 {
-    background-color: var(--color-blue-light);
+    background-color: var(--color-red);
     color: white;
 
     border-radius: 15px;
@@ -108,6 +125,7 @@
     padding: 5px 15px;
 
     position: relative;
+
 }
 
 .appointment:hover .appointment_cancel
